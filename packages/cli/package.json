@@ -1,0 +1,24 @@
+{
+  "name": "@jyn/cli",
+  "version": "0.1.0",
+  "description": "Command line interface for Just You Need (JYN)",
+  "type": "module",
+  "bin": {
+    "jyn": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --clean",
+    "dev": "tsup src/index.ts --format esm --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@jyn/core": "workspace:*",
+    "@clack/prompts": "^0.7.0",
+    "commander": "^12.0.0",
+    "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}
