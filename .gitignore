@@ -16,3 +16,5 @@ build/
 .vscode/
 .idea/
 .mnemon/
+AGENTS.md
+graphify-out/
